@@ -22,3 +22,4 @@ The neccessary hardware components are:
 5mm steel rod: https://amzn.to/3HMBGeV
 Thin wall bearings: https://amzn.to/3gtYLqG and: https://amzn.to/3H7JPZY
 Screws (M3 majority preferred unless physically changed) 
+Velcro straps (or similar): https://www.amazon.co.uk/Self-Adhesive-Securing-Buckles-Adjustable-Reusable/dp/B089CHPHL3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.5dsgvGt7lPHmhyhQbuP7C42uf2ieOHCIfrEnpHtcNEWHc1OP-DaM5SwxeSA6ynxMKf4WebveuFtyhtWOhqZDkTgFeHHgGAi9gCWfoT2Ec2AkIRtmZoKjq-eUNuBgpvqbusEXAEcS3-po0T12m8JgEBhUgeWprKwp4iycWIUY4EQop12zaUOfV8OhjUkSslc5SYXOchrFdRfMDeCy82xFkKQeWlIbZ40Cm738LgfEIUoINQmffHyhtkBoVOKChHVG_v2-uxVgUQHiSOOOuFvo6VU6lhxy7ZSqMcDPfQ5I1Xc.XzllWivF1aelRoydVfNWvn4ou5WvIWxe0ottvtEA-nY&dib_tag=se&keywords=velcro%2Bstraps&qid=1713287679&sr=8-5&th=1
