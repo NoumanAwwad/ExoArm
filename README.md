@@ -1,7 +1,7 @@
-ExoArm is a non profit open source exoskeleton arm meant to act as a substitute to more expensive exoskeletons in places that less financially stable/do not have access to medical exoskeletons. 
-It is meant to be highly customizable so any changes to the design are encouraged in order to better suit the user/patient. 
-When customizing this design please not that the creator of ExoArm does not take any responsibility for any injuiries incurred when modifying this design. The assumpltion when modifying it either electronically
-or phsycially, is that you have the necessary understanding to successfully implement the changes you wish you make without incurring any damage to the arm or yourself. 
+ExoArm is a non-profit open-source exoskeleton arm meant to act as a substitute for more expensive exoskeletons in places that are less financially stable/do not have access to medical exoskeletons. 
+It is meant to be highly customizable so any changes to the design are encouraged to better suit the user/patient. 
+When customizing this design please note that the creator of ExoArm does not take any responsibility for any injuries incurred when utilising/modifying this design. The assumption when modifying it either electronically
+or physically, is that you have the necessary understanding to successfully implement the changes you wish to make without incurring any damage to the arm or yourself. 
 
 The necessary electronics for the creation of ExoArm are as follows: 
 
