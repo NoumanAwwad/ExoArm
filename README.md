@@ -1,9 +1,9 @@
 ExoArm is a non-profit open-source exoskeleton arm meant to act as a substitute for more expensive exoskeletons in places that are less financially stable/do not have access to medical exoskeletons. 
 It is meant to be highly customizable so any changes to the design are encouraged to better suit the user/patient. 
 When customizing this design please note that the creator of ExoArm does not take any responsibility for any injuries incurred when utilising/modifying this design. The assumption when modifying it either electronically
-or physically, is that you have the necessary understanding to successfully implement the changes you wish to make without incurring any damage to the arm or yourself. 
+or physically, is that you have the necessary knowledge and safety precautions to successfully implement the changes you wish to make without incurring any damage to the arm or yourself. Please exercise caution when working with the electronics and follow the instructions outlined in the README.
 
-The necessary electronics for the creation of ExoArm are as follows: 
+To construct ExoArm, the following electronic components are recommended (substitutes with similar functionalities can be selected, though the arm will need to be modified to ensure proper functionality): 
 
 NEMA 17 Stepper motor
 Matrix board
@@ -15,9 +15,9 @@ Switch
 A4988 Stepper Driver (the circuit will end up changing if you use the TMC2208)
 10 microF capacitor (decoupling capacitor)
 
-ExoArm will require a 3D printer in order to fabricate it. 
+ExoArm will require a 3D printer to fabricate it. 
 
-The neccessary hardware components are: 
+The necessary hardware components are: 
 
 5mm steel rod: https://amzn.to/3HMBGeV
 Thin wall bearings: https://amzn.to/3gtYLqG and: https://amzn.to/3H7JPZY
