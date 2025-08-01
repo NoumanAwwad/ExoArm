@@ -43,8 +43,9 @@ The following is a list of components needed to build the ExoArm prototype. Pric
 1. Print components (CAD designs found under `/cad`)
 2. Attach flex sensors to any glove, using adhesive (tape, glue gun, etc)
 3. Wire sensors to Arduino (diagram below)
-4. Use ULN2003 to drive stepper motors
+4. Wire A4988 to drive NEMA 17, attatch both to the arduino according to the wire_diagram
 5. Upload code from `/code` directory
+6. Run program
 
 ---
 
