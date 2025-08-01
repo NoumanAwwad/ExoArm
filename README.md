@@ -1,12 +1,12 @@
 ExoArm: Open-Source Robotic Exoskeleton Arm
 
-ExoArm is a solo project, 3D-printable robotic exoskeleton arm designed to assist in physiotherapy. Desgined for the purpose of ensuring access to an affordable alternative to exoskeletons in less economoically developed countries. This system is built using stepper motors, flex sensors, and an Arduino-based control system, maintaining a total cost under £110.
+ExoArm is a solo-engineered project, fully 3D-printable robotic exoskeleton arm designed to assist in upper limb physiotherapy. Desgined for the purpose of ensuring access to an affordable alternative to exoskeletons in less economoically developed countries. This system is built using stepper motors, flex sensors, and an Arduino-based control system, maintaining a total cost under £110.
 
 ---
 
 ## Features
 
-- Arduino-based closed-loop control using flex sensors
+- Arduino-based closed-loop control using flex sensors (sensors can be replaced with various types)
 - Stepper motors via Arduino driver boards
 - 3D-printable design (created fully in Fusion 360)
 - Fully open-source: software, and CAD fully implemented, only hardware components require purchase
@@ -43,19 +43,21 @@ The following is a list of components needed to build the ExoArm prototype. Pric
 1. Print components (CAD designs found under `/cad`)
 2. Attach flex sensors to any glove, using adhesive (tape, glue gun, etc)
 3. Wire sensors to Arduino (diagram below)
-4. Wire A4988 to drive NEMA 17, attatch both to the arduino according to the wire_diagram
+4. Wire A4988 to drive NEMA 17, attatch both to the arduino (diagram below)
 5. Upload code from `/code` directory
-6. Run program
+6. Connect Arduino board to computer and run code
+7. Disconnect after confirming successful operation
+8. Use freely
 
 ---
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 ![Wiring Diagram](images/wiring_diagram.png)
 
 ---
 
-## 🧱 CAD Design
+## CAD Design
 
 ![CAD Render](images/cad_render.png)
 
@@ -64,9 +66,13 @@ You can download the .STL files from the `/cad` folder.
 
 ## Demo Video
 
-[![Redirect to Youtube](https://img.youtube.com/vi/uwDAj7jE6Rw/0.jpg)](https://youtu.be/uwDAj7jE6Rw)
+[![Redirect To Youtube Demonstration](https://img.youtube.com/vi/uwDAj7jE6Rw/0.jpg)](https://youtu.be/uwDAj7jE6Rw)
 
 ---
+## 🙋‍♂️ Author
+
+**Nouman Shiekh Hassan Awwad**  
+Mechatronics Engineer | [LinkedIn](https://www.linkedin.com/in/nouman-awwad/) | [GitHub](https://github.com/NoumanAwwad)
 
 
 
