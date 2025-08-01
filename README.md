@@ -1,25 +1,71 @@
-ExoArm is a non-profit open-source exoskeleton arm meant to act as a substitute for more expensive exoskeletons in places that are less financially stable/do not have access to medical exoskeletons. 
-It is meant to be highly customizable so any changes to the design are encouraged to better suit the user/patient. 
-When customizing this design please note that the creator of ExoArm does not take any responsibility for any injuries incurred when utilising/modifying this design. The assumption when modifying it either electronically
-or physically, is that you have the necessary knowledge and safety precautions to successfully implement the changes you wish to make without incurring any damage to the arm or yourself. Please exercise caution when working with the electronics and follow the instructions outlined in the README.
+ExoArm: Open-Source Robotic Exoskeleton Arm
 
-To construct ExoArm, the following electronic components are recommended (substitutes with similar functionalities can be selected, though the arm will need to be modified to ensure proper functionality): 
+ExoArm is a solo project, 3D-printable robotic exoskeleton arm designed to assist in physiotherapy. Desgined for the purpose of ensuring access to an affordable alternative to exoskeletons in less economoically developed countries. This system is built using stepper motors, flex sensors, and an Arduino-based control system, maintaining a total cost under £110.
 
-NEMA 17 Stepper motor
-Matrix board
-10kOhm resistor
-Arduino Uno Minima R4 (or similar)
-Flex Sensor
-Switch
-11.1V LiPO battery 650mAh (can be found here: https://hobbyking.com/en_us/turnigy-graphene-panther-650mah-3s-75c-battery-pack-w-xt30.html)
-A4988 Stepper Driver (the circuit will end up changing if you use the TMC2208)
-10 microF capacitor (decoupling capacitor)
+---
 
-ExoArm will require a 3D printer to fabricate it. 
+## Features
 
-The necessary hardware components are: 
+- Arduino-based closed-loop control using flex sensors
+- Stepper motors via Arduino driver boards
+- 3D-printable design (created fully in Fusion 360)
+- Fully open-source: software, and CAD fully implemented, only hardware components require purchase
 
-5mm steel rod: https://amzn.to/3HMBGeV
-Thin wall bearings: https://amzn.to/3gtYLqG and: https://amzn.to/3H7JPZY
-Screws (M3 majority preferred unless physically changed) 
-Velcro straps (or similar): https://www.amazon.co.uk/Self-Adhesive-Securing-Buckles-Adjustable-Reusable/dp/B089CHPHL3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.5dsgvGt7lPHmhyhQbuP7C42uf2ieOHCIfrEnpHtcNEWHc1OP-DaM5SwxeSA6ynxMKf4WebveuFtyhtWOhqZDkTgFeHHgGAi9gCWfoT2Ec2AkIRtmZoKjq-eUNuBgpvqbusEXAEcS3-po0T12m8JgEBhUgeWprKwp4iycWIUY4EQop12zaUOfV8OhjUkSslc5SYXOchrFdRfMDeCy82xFkKQeWlIbZ40Cm738LgfEIUoINQmffHyhtkBoVOKChHVG_v2-uxVgUQHiSOOOuFvo6VU6lhxy7ZSqMcDPfQ5I1Xc.XzllWivF1aelRoydVfNWvn4ou5WvIWxe0ottvtEA-nY&dib_tag=se&keywords=velcro%2Bstraps&qid=1713287679&sr=8-5&th=1
+---
+
+## Parts List With Prices
+
+The following is a list of components needed to build the ExoArm prototype. Prices are approximate as of 2025.
+
+| Component                             | Qty | Cost (GBP) | Link |
+|---------------------------------------|-----|------------|------|
+| Arduino Uno R4 Minima (or similar)    | 1   | £15        | [Arduino](https://store.arduino.cc/products/uno-r4-minima) |
+| NEMA 17 Stepper Motor                 | 1   | £10        | [Example](https://www.amazon.co.uk/s?k=nema+17+stepper+motor) |
+| A4988 Stepper Driver                  | 1   | £3         | [Example](https://www.amazon.co.uk/s?k=a4988+stepper+driver) |
+| 10μF Capacitor (for A4988)            | 1   | £0.50      | - |
+| Matrix Board (Prototype PCB)          | 1   | £2         | [Example](https://www.amazon.co.uk/s?k=matrix+board+prototype) |
+| 10kΩ Resistor                         | 2   | £0.20      | - |
+| Flex Sensor                           | 1   | £12        | [Example](https://www.amazon.co.uk/s?k=flex+sensor) |
+| Switch (Tactile or Toggle)            | 1   | £0.50      | [Example](https://www.amazon.co.uk/s?k=tactile+switch) |
+| 11.1V LiPo Battery (650mAh)           | 1   | £12        | [Turnigy Battery](https://hobbyking.com/en_us/turnigy-graphene-panther-650mah-3s-75c-battery-pack-w-xt30.html) |
+| 5mm Steel Rod                         | 1   | £9         | [Amazon](https://amzn.to/3HMBGeV) |
+| Thin Wall Bearings                    | 2   | £6         | [Option 1](https://amzn.to/3gtYLqG), [Option 2](https://amzn.to/3H7JPZY) |
+| M3 Screws (Assorted Set)              | 1   | £4         | [Example](https://www.amazon.co.uk/s?k=m3+screw+set) |
+| Velcro Straps                         | 2   | £7         | [Amazon UK](https://www.amazon.co.uk/Self-Adhesive-Securing-Buckles-Adjustable-Reusable/dp/B089CHPHL3) |
+| PLA Filament (for 3D printing)        | 1 roll | £10     | [Example](https://www.amazon.co.uk/s?k=pla+filament) |
+
+**Total Estimated Build Cost:** ~£90–110 
+
+---
+
+## Step By Step Hardware Setup (3D printer required)
+
+1. Print components (CAD designs found under `/cad`)
+2. Attach flex sensors to any glove, using adhesive (tape, glue gun, etc)
+3. Wire sensors to Arduino (diagram below)
+4. Use ULN2003 to drive stepper motors
+5. Upload code from `/code` directory
+
+---
+
+## 🔌 Wiring Diagram
+
+![Wiring Diagram](images/wiring_diagram.png)
+
+---
+
+## 🧱 CAD Design
+
+![CAD Render](images/cad_render.png)
+
+You can download the .STL files from the `/cad` folder.
+
+
+## Demo Video
+
+[![Redirect to Youtube](https://img.youtube.com/vi/uwDAj7jE6Rw/0.jpg)](https://youtu.be/uwDAj7jE6Rw)
+
+---
+
+
+
